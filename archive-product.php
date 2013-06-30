@@ -7,7 +7,7 @@
  * @package WooCommerce
  * @since WooCommerce 1.0
  * @todo replace loop-shop with a content template and include query/loop here instead.
- * ecovaran  - removed <?php woocommerce_get_template_part( 'content', 'product' ); ?> for empty shop page
+ * 26June2013 - ecovaran  - removed <?php woocommerce_get_template_part( 'content', 'product' ); ?> for empty shop page
  */
 echo "<title>Alim | By Alana Ilham</title>";
 
