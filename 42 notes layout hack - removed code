@@ -1,0 +1,45 @@
+//top menu for 42 notes
+
+<?php showTopMenu(); ?>
+
+//bottom 3 column for 42 notes
+<!-- START of PAGE-BOTTOM -->
+    <div class="page-bottom-wrapper">
+    		
+            <div id="page-bottom" class="clearfix">
+            		
+                    <div class="box">
+                            <div class="icon">
+                            	<img src="<?php echo THEME_DIR; ?>/images/icon-1.png" alt="" />
+                            </div>                                   
+							<div class="data">
+								<h3><?php echo wpts_theme_get_option("layout", "b1_title"); ?></h3>
+								<p><?php echo wpts_theme_get_option("layout", "b1_text"); ?></p>
+							</div>
+                            
+                    </div><!-- end of .box -->
+                    
+                    <div class="box">
+							<div class="icon">
+                            	<img src="<?php echo THEME_DIR; ?>/images/icon-2.png" alt="" />
+                            </div>                                    
+							<div class="data">
+								<h3><?php echo wpts_theme_get_option("layout", "b2_title"); ?></h3>
+								<p><?php echo wpts_theme_get_option("layout", "b2_text"); ?></p>
+							</div>							
+                    </div><!-- end of .box -->
+                    
+                    <div class="box last">
+							<div class="icon">
+                            	<img src="<?php echo THEME_DIR; ?>/images/icon-3.png" alt="" />
+                            </div>                                    
+							<div class="data">
+								<h3><?php echo wpts_theme_get_option("layout", "b3_title"); ?></h3>
+								<p><?php echo wpts_theme_get_option("layout", "b3_text"); ?></p>
+							</div>                    		
+                    </div><!-- end of .box -->
+                    
+            </div><!-- end of #page-bottom -->
+            
+    </div>
+    <!-- END of PAGE-BOTTOM -->
