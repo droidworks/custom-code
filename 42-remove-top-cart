@@ -1,4 +1,4 @@
-//removed cart from above top menu
+//removed cart from above top menu (insert after </div><!-- /#logo --> in header.php
 
 <div id="btn-cart" class="fr">
         	<a href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
