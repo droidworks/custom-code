@@ -1,0 +1,17 @@
+//removed from front-page.php for Coquette theme
+
+<?php get_template_part( 'includes/featured' ); ?>
+				
+		<div id="featured-products">
+			<h2 class="flourish-title"><span><?php _e('Featured Products', 'woothemes'); ?></span></h2>
+			<?php echo do_shortcode('[featured_products per_page="5" columns="5"]'); ?>
+		</div><!--/#featured-products-->
+    
+		<div id="main" class="col-left">      
+		
+			<div class="product-gallery">
+				<h2 class="flourish-title"><span><?php _e('Recent Products', 'woothemes'); ?></span></h2>
+				<?php echo do_shortcode('[recent_products per_page="6" columns="2"]'); ?>
+			</div><!--/.product-gallery-->
+			
+//calle the featured code for woocommerce plugin
