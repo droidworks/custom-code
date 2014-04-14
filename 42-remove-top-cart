@@ -1,0 +1,25 @@
+//removed cart from above top menu
+
+<div id="btn-cart" class="fr">
+        	<a href="<?php echo $woocommerce->cart->get_cart_url(); ?>" title="<?php _e('View your shopping cart', 'woothemes'); ?>">
+				<span> 
+				<?php 
+				echo sprintf(_n('%d item &ndash; ', '%d items &ndash; ', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);
+				echo $woocommerce->cart->get_cart_total();;
+				?>
+				</span>
+			</a>
+        </div>
+        
+        <ul id="account-nav" class="nav fr">
+        
+	        <li class="account">
+	        	<a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><?php _e('Account','woothemes'); ?></a>
+	        </li>
+	        <?php
+	        if (sizeof($woocommerce->cart->cart_contents)>0) :
+	        echo '<li class="checkout"><a href="'.$woocommerce->cart->get_checkout_url().'">'.__('Checkout','woothemes').'</a></li>';
+	    	endif; 
+	    	?>
+    	
+    	</ul>
